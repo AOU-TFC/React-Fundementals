@@ -1,0 +1,30 @@
+/* Styling for the main container of the Navbar */
+.Navbar-Container {
+  background-color: #172e56; /* Setting the background color of the Navbar */
+  padding: 30px; /* Adding padding around the Navbar */
+}
+
+/* Styling for the unordered list inside the Navbar container */
+.Navbar-Container ul {
+  display: flex; /* Using flexbox for layout */
+  flex-direction: row; /* Arranging items in a row */
+  justify-content: space-around; /* Distributing items evenly with space around them */
+  align-items: center; /* Centering items vertically */
+}
+
+/* Styling for the list items inside the unordered list */
+.Navbar-Container li {
+  list-style: none; /* Removing default list item styling (no bullets) */
+}
+
+/* Styling for the links inside the list items */
+.Navbar-Container a {
+  text-decoration: none; /* Removing the underline from links */
+  color: white; /* Setting the text color of links to white */
+}
+
+/* Styling for the links when hovered over */
+.Navbar-Container a:hover {
+  text-decoration: none; /* Ensuring the underline is not added on hover */
+  color: red; /* Changing the text color to red on hover */
+}
