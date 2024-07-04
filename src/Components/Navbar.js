@@ -25,6 +25,14 @@ function Navbar() {
           {/* List item containing a link to the useRef page */}
           <Link to="/use-ref">useRef</Link>
         </li>
+        <li>
+          {/* List item containing a link to the useReducer page */}
+          <Link to="/use-reducer">useReducer</Link>
+        </li>
+        {/* List item containing a link to the useCallback page */}
+        <li>
+          <Link to="/use-callback">useCallback</Link>
+        </li>
       </ul>
     </div>
   );

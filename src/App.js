@@ -7,6 +7,8 @@ import UseState from "./Pages/UseState"; // Importing the UseState page componen
 import UseEffect from "./Pages/UseEffect"; // Importing the UseEffect page component
 import UseContext from "./Pages/UseContext"; // Importing the UseContext page component
 import UseRef from "./Pages/UseRef"; // Importing the UseRef page component
+import UseReducer from "./Pages/UseReducer"; // Importing the UseReducer component
+import UseCallback from "./Pages/UseCallback"; // Importing the UseCallback component
 
 // Defining the main App component
 function App() {
@@ -14,22 +16,24 @@ function App() {
     <div className="App">
       {/* Main container div */}
       <BrowserRouter>
-        {" "}
         {/* Wrapping the application with BrowserRouter to enable routing */}
         <Navbar /> {/* Rendering the Navbar component */}
         <Routes>
-          {" "}
           {/* Defining routes for the application */}
-          <Route path="/" element={<Home />} />{" "}
+          <Route path="/" element={<Home />} />
           {/* Route for the Home component, accessible at the root path '/' */}
-          <Route path="/use-state" element={<UseState />} />{" "}
+          <Route path="/use-state" element={<UseState />} />
           {/* Route for the UseState page component, accessible at '/use-state' */}
-          <Route path="/use-effect" element={<UseEffect />} />{" "}
+          <Route path="/use-effect" element={<UseEffect />} />
           {/* Route for the UseEffect page component, accessible at '/use-effect' */}
-          <Route path="/use-context" element={<UseContext />} />{" "}
+          <Route path="/use-context" element={<UseContext />} />
           {/* Route for the UseContext page component, accessible at '/use-context' */}
-          <Route path="/use-ref" element={<UseRef />} />{" "}
+          <Route path="/use-ref" element={<UseRef />} />
           {/* Route for the UseRef page component, accessible at '/use-ref' */}
+          <Route path="/use-reducer" element={<UseReducer />} />
+          {/* Route for the UseReducer page component, accessible at '/use-reducer' */}
+          <Route path="/use-callback" element={<UseCallback />} />
+          {/* Route for the UseCallback page component, accessible at '/use-callback' */}
         </Routes>
       </BrowserRouter>
     </div>
